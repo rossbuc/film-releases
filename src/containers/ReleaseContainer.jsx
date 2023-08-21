@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import Header from '../components/Header'
 import ReleaseList from '../components/ReleaseList'
+import ReleasesLink from '../components/ReleasesLink'
 
 
 function ReleaseContainer () {
@@ -36,6 +37,7 @@ function ReleaseContainer () {
         <>
             <Header/>
             <ReleaseList releases={releases}/>
+            <ReleasesLink/>
         </>
     )
 }
