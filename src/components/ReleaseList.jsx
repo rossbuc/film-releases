@@ -1,13 +1,7 @@
-
+import Release from './Release'
 
 function ReleaseList ({releases}) {
-    const releaseItems = releases.map((release) => {
-        return (
-            <li key={release.id}>
-                <a href={release.url} className="list-item">{release.name}</a>
-            </li>
-        )
-    })
+    const releaseItems = releases.map((release) => <Release release={release} key={release.id}/>)
 
     return (
         <ul>
